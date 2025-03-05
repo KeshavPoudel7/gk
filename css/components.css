@@ -102,12 +102,12 @@
 /* Posts View All Button */
 .posts-view-all-btn {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 5px 5px;
     background: var(--primary);
     color: #fff;
     border-radius: 20px;
     font-weight: 400;
-    letter-spacing: 1px;
+
     text-transform: uppercase;
     box-shadow: 0 4px 15px rgba(201, 156, 243, 0.4);
     transition: all 0.3s ease;
@@ -267,9 +267,18 @@
     position: relative;
     z-index: 2;
 }
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
 
+.news-form-group {
+    display: flex;
+    margin-bottom: 15px;
+}
 .newsletter-form {
     border-radius: 30px;
+    flex-grow: 1;
     height: 50px;
     border: none;
     padding: 0 20px;
@@ -295,6 +304,8 @@
     box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
     position: relative;
     z-index: 2;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .news-btn:hover {
@@ -307,7 +318,76 @@
 .news-form-group {
     position: relative;
     z-index: 2;
+    gap: 10px;
 }
+
+/* Newsletter Message Styles */
+.newsletter-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close-modal {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .news-form-group {
+        flex-direction: column;
+    }
+
+    .newsletter-form,
+    .news-btn {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+}
+
 
 /* Footer Section */
 .footer {
