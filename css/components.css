@@ -1,6 +1,5 @@
 /* Components Styles for Keshav Poudel's Website */
 
-
 /* Password Modal Styles */
 .modal {
     display: none;
@@ -122,7 +121,7 @@
     color: #fff;
 }
 
-/* For outline version (if needed) */
+/* For outline version */
 .posts-view-all-btn.alt {
     background: transparent;
     border: 2px solid var(--primary);
@@ -133,8 +132,6 @@
     background: var(--primary);
     color: #fff;
 }
-/* Posts View All Button */
-
 
 .posts {
     background-color: var(--dark-bg);
