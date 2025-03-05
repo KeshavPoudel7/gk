@@ -11,8 +11,7 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
-    /* Color Palette */
+
     --primary: #8A2BE2;
     --primary-light: #9D4EDD;
     --secondary: #3A86FF;
@@ -160,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 .delay-700 { animation-delay: 0.7s; }
 .delay-800 { animation-delay: 0.8s; }
 
-/* Navigation - Horizontal layout with logo and nav links on same line */
+/* Navigation - */
 .navbar-default {
     background-color: rgba(18, 18, 18, 0.8);
     backdrop-filter: blur(10px);
@@ -188,11 +187,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-/* Make logo and menu appear on same line with nav on right */
 .navbar-collapse {
-    /* display: inline-block !important; */
-    float: right; /* This ensures the nav is on the right */
+    float: right; 
     margin-top: 0;
     padding: 0;
 }
@@ -202,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     height: 60px;
     align-items: center;
-    justify-content: flex-end; /* Align items to the end (right) */
+    justify-content: flex-end; 
 }
 
 .navbar-default .navbar-nav > li {
@@ -248,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
     width: calc(100% - 30px);
 }
 
-/* Add some right margin to the navigation to create spacing from the edge */
+
 .navbar-default .navbar-collapse {
     margin-right: 15px;
 }
@@ -268,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-default .navbar-nav {
         display: block;
         height: auto;
-        justify-content: flex-start; /* Reset for mobile */
+        justify-content: flex-start; 
     }
     
     .navbar-default .navbar-nav > li {
@@ -291,9 +287,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 /* Hero Banner */
-
-
-/* Hero Banner */
 .hero-banner {
     width: 100%;
     height: 100vh;
@@ -302,7 +295,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -60px; /* Adjusted for smaller navbar */
+    margin-top: -60px; 
 }
 
 .hero-banner::before {
@@ -349,13 +342,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-content p {
-
     font-size: 1.2rem;
-
     margin-bottom: 30px;
-
     color: rgba(255, 255, 255, 0.9);
-
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 
 }
@@ -445,22 +434,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Biography Section */
 
-/* Add these styles to your CSS */
 #biography h3.animate-fadeIn {
-    font-size: 1.5em; /* 20% increase relative to parent */
-    color: #eeebeb; /* 20% darker than default (assuming default was #555) */
+    font-size: 1.5em; 
+    color: #eeebeb; 
     margin-bottom: 1rem
 }
 
 #biography .stat-left p {
-    font-size: 1.1em; /* 10% increase */
-    color: #956d6d; /* 10% darker than default */
+    font-size: 1.1em; 
+    color: #956d6d; 
     font-weight: 600;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
-
-/* Biography Section */
-
 
 /* Password Modal */
 .modal {
