@@ -371,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1.5em;
+    height: 2.1em;
     margin-bottom: 30px;
 }
 
@@ -379,7 +379,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .cursor {
