@@ -34,6 +34,50 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('newsletter-form');
+    const emailInput = document.getElementById('subscribe_email');
+    const errorMessage = document.getElementById('newsletter-error');
+    const thankYouModal = document.getElementById('thankYouModal');
+    const closeModalBtn = document.querySelector('.close-modal');
+
+    // Email validation function
+    function validateEmail(email) {
+        // Check if email ends with @gmail.com and has at least 5 characters before @
+        const gmailPattern = /^[a-zA-Z0-9._%+-]{5,}@gmail\.com$/;
+        return gmailPattern.test(email);
+    }
+
+    // Form submission handler
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = emailInput.value.trim();
+
+        if (validateEmail(email)) {
+            // Valid email
+            errorMessage.style.display = 'none';
+            thankYouModal.style.display = 'block';
+            form.reset(); // Clear the form
+        } else {
+            // Invalid email
+            errorMessage.style.display = 'block';
+        }
+    });
+
+    // Close modal functionality
+    closeModalBtn.addEventListener('click', function() {
+        thankYouModal.style.display = 'none';
+    });
+
+    // Close modal if clicked outside
+    window.addEventListener('click', function(event) {
+        if (event.target === thankYouModal) {
+            thankYouModal.style.display = 'none';
+        }
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
     // Get the current page filename
     const currentPage = window.location.pathname.split('/').pop();
     
