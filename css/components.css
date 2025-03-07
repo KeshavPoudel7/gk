@@ -49,6 +49,10 @@
     margin-bottom: 15px;
     font-family: 'Dosis', sans-serif;
 }
+#authorized-text {
+    font-weight: bold;
+    font-size: 18px;
+}
 
 .modal-content p {
     color: #666;
